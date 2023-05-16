@@ -1,0 +1,22 @@
+body {
+    font-size: 16px;
+}
+
+.purple{
+    color: #565ADD;
+}
+
+.portfolio__header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--thd-color-white);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: var(--thd-nav-h-sm);
+    transition-duration: .5s;
+    transition-property: box-shadow;
+    z-index: 30;
+}
