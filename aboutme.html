@@ -1,17 +1,20 @@
 <html lang="en">
 
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="fixed w-full portfolio__header">
+    <header class="w-full portfolio__header">
         <nav class="bg-white border-gray-200 p-3 px-20">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center h-20 w-150">
+                <a href="./index.html" class="flex items-center h-20 w-150">
                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"
                         class="h-30 w-20 mr-3 sm:h-9" alt="Landwind Logo" />
                     <h3 class="text-3xl self-center font-extrabold whitespace-nowrap">Creative</h3>
@@ -19,9 +22,9 @@
 
                 <div class="w-full md:block md:w-auto">
                     <ul
-                        class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-xl">
+                        class="font-medium flex flex-col pt-0 p-4 md:p-0 lg:mt-4 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-xl">
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 purple rounded md:p-0 font-black text-xl"
+                            <a href="./index.html" class="block py-2 pl-3 pr-4 purple rounded md:p-0 font-black text-xl"
                                 aria-current="page">Portfolio</a>
                         </li>
                         <li>
@@ -42,33 +45,71 @@
             </div>
         </nav>
     </header>
-
-    <section class="text-gray-600 body-font max-w-7xl m-auto mt-36 relative">
-        <div class="container mx-auto flex px-5 pt-10 pb-48 md:flex-row flex-col items-center">
+    <section class=" body-font max-w-7xl m-auto relative mt-0 md:mt-10 lg:mt-10">
+        <div class="container mx-auto flex px-5 pt-0 pb-28 md:flex-row flex-col items-center flex-col lg:flex-row md:flex-row">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-10/12 mb-10 md:mb-0 w-64 h-auto">
-                <img class="object-cover object-center rounded" alt="hero"
+                <img class="object-cover object-center rounded border-solid border-2 border-black" alt="hero"
                     src="https://plus.unsplash.com/premium_photo-1661281312308-a2011d3d385b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
                     class="border-2 border-gray-500 rounded-lg" />
             </div>
             <div
-                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-black purple">Who Am I?
-                </h1>
-                <p class="mb-8 leading-relaxed">I am a passionate professional photographer with a keen eye for detail
-                    and a deep love for capturing moments. With years of experience and a commitment to excellence, I
-                    strive to create stunning images that tell stories and evoke emotions. Through my lens, I aim to
-                    freeze precious moments in time and create cherished memories that will be treasured for a lifetime.
-                </p>
+                class="mt-14 lg:mt-0 md:mt-0 lg:flex-grow md:w-2/3 lg:pl-18 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center relative">
 
-                <div class="flex justify-center">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <div class="flex-col mx-auto max-w-lg">
+
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-black purple">Who Am I?
+                            </h1>
+
+                            <p class="mb-8 leading-relaxed justify">I am a passionate and dedicated professional photographer,
+                                driven by the art of capturing moments that tell compelling stories. With a keen eye for
+                                detail and a creative vision, I strive to create visually stunning and emotionally
+                                impactful images. My expertise lies in various genres of photography, including
+                                portrait, wedding, landscape, and commercial. With years of experience, I have developed
+                                a strong technical proficiency in utilizing advanced equipment and editing techniques to
+                                deliver exceptional results. Through my lens, I aim to preserve precious memories, evoke
+                                emotions, and create timeless images that leave a lasting impression.
+                            </p>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 right-1 top-1/2">
+                            <a href="#slide2" class="btn btn-circle ">❯</a>
+                        </div>
+
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <div class="flex-col mx-auto max-w-lg">
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-black purple">My Expertise?
+                            </h1>
+                            <ul class="list-decimal mx-4 justify">
+                                <li>Expert in capturing authentic moments and emotions, creating photographs that tell
+                                    compelling stories.</li>
+                                <li>Skilled in mastering light and composition to create visually stunning and impactful
+                                    images.</li>
+                                <li>Experienced in working with diverse clients and subjects, adapting to different
+                                    environments and delivering exceptional results.</li>
+                                <li>Proficient in utilizing advanced photography equipment and techniques to achieve
+                                    professional-grade quality.</li>
+                                <li>Knowledgeable in post-processing and editing, enhancing images to perfection while
+                                    maintaining their natural essence.</li>
+                            </ul>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-1 top-1/2">
+                            <a href="#slide1" class="btn btn-circle ">❮</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="absolute left-30 lg:left-36 md:left-36 bottom-[-45px]">
                     <button
                         class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Connect</button>
                 </div>
             </div>
         </div>
-        <div class="absolute top-96">
-            <p class='mt-0 ml-48 pt-4 font-black text-4xl'>John Doe</p>
-            <p class='mt-3 ml-32 font-black text-2xl'>Professional Photographer</p>
+        <div class="absolute top-44 lg:top-96 md:top-96 lg:left-0 sm:left-0 left-[-55px]">
+            <p class='mt-0 ml-48 font-black text-2xl lg:text-4xl md:text-4xl'>John Doe</p>
+            <p class='mt-2 ml-32 font-black text-xl lg:text-2xl md:text-2xl'>Professional Photographer</p>
         </div>
     </section>
 
