@@ -31,3 +31,15 @@ body {
 .btn-circle {
     background-color: rgb(0 0 0 / 64%);
 }
+
+.h-80vh{
+    height:83vh;
+}
+
+.transparent-black {
+    background-color: #000000ad;
+}
+
+.white {
+    color: #efefef;
+}
